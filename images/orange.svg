@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="orange" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
+  <defs>
+   <style type="text/css">
+
+   #orange:hover{
+        animation: dancingGrapes 0.9s ease-in-out;
+   }
+	.orange1{fill:#FFA500 ;stroke:#FCE205;stroke-width:33; height:33;stroke-linecap:butt;stroke-linejoin:bevel;}
+  .orange2{fill:#aacc00;}
+  .orange3{fill:#F28C28;}
+  .orange4{fill:#bfd200;}
+  .orange5{fill:#2b9348;}
+  svg {
+    cursor: pointer;
+	}
+  svg:hover .orange1 {
+  stroke-dasharray: 600;
+  animation: circular 3s linear infinite;
+  }
+
+  @keyframes circular {
+
+  0%{
+    stroke-width:15px;
+  }
+  50%{
+    stroke-width:25px;
+  }
+ 100% {
+    stroke-width: 50px;
+    stroke-dashoffset:300;
+    stroke-dasharray:300;
+    transition: e
+  }
+
+}
+
+</style>
+  </defs>
+  <path class="orange5" d="M541.19.04c2.84-.26,5.74.76,7.79,2.8,2.05,2.05,3.08,4.91,2.8,7.79-7.8,81.78-72.95,146.79-154.91,154.56-.31.03-.62.05-.92.05-2.57,0-5.05-1.02-6.87-2.85-2.05-2.05-3.08-4.91-2.8-7.79C394.07,72.81,459.22,7.81,541.19.04Z"/>
+  <path class="orange4" d="M396.87,165.2c-.31.03-.62.05-.92.05-2.57,0-5.05-1.02-6.87-2.85L548.77,2.71c.06.06.15.07.21.13,2.05,2.05,3.08,4.91,2.8,7.79-7.8,81.78-72.95,146.79-154.91,154.56Z"/>
+  <path class="orange2" d="M372.4,193.22c-3.53,0-7.06-1.35-9.76-4.04-5.39-5.39-5.39-14.12,0-19.52l96.6-96.6c5.39-5.39,14.12-5.39,19.51,0,5.39,5.39,5.39,14.12,0,19.52l-96.6,96.6c-2.69,2.69-6.23,4.04-9.76,4.04Z"/>
+  <circle class="orange1" cx="400" cy="468.81" r="331.19"/>
+  <g>
+    <path class="orange3" d="M565.6,717.2c-182.91,0-331.19-148.28-331.19-331.19,0-96.15,41.63-181.99,107.07-242.49-154.88,27.73-272.66,162.43-272.66,325.29,0,182.91,148.28,331.19,331.19,331.19,86.76,0,165.07-34.1,224.12-88.7-19.07,3.41-38.47,5.9-58.52,5.9Z"/>
+    <circle class="orange3" cx="434.5" cy="268.71" r="20.7"/>
+    <circle class="orange3" cx="627.69" cy="572.3" r="20.7"/>
+    <circle class="orange3" cx="496.6" cy="317.01" r="13.8"/>
+    <circle class="orange3" cx="620.79" cy="496.4" r="13.8"/>
+    <circle class="orange3" cx="551.79" cy="634.4" r="13.8"/>
+  </g>
+
+    <script>
+    const orangeorange = document.querySelector('#orange');
+    console.log(orangeorange);
+    function logthisId(element) {
+    console.log(this);
+    console.log('clicked on this element:', this.id);
+    }
+
+    orangeorange.addEventListener('click', logthisId);
+    </script>
+</svg>
